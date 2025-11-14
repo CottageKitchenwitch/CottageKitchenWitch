@@ -1,0 +1,38 @@
+:root {
+  --background: linear-gradient(180deg, #0a0f0a 0%, #0f1f10 35%, #132a13 60%, #000 100%);
+  --card1: #132a13;
+  --card2: #1b2b1b;
+  --card3: #243524;
+  --ink: #e6e0d9;
+  --accent: #7a5c8e;
+  --divider: #3a2f3a;
+  --star: #ffd97a;
+  --highlight: #cfa84a;
+}
+
+body {
+  font-family: "Crimson Pro", "Montserrat", serif;
+  color: var(--ink);
+  background: var(--background);
+  margin: 0;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* Starry background */
+.starry-bg { ... }
+
+/* Twinkle animation */
+@keyframes twinkle { ... }
+
+/* Wrap, header, brand, tagline, divider, h2, section, card1/card2/card3, items, item, note, input, button, footer */
+/* Copy all your CSS rules here exactly as they were */
+
+/* Tab styles */
+.tab-container { display: flex; flex-direction: column; }
+.tab-buttons { display: flex; flex-wrap: wrap; margin-bottom: 16px; border-bottom: 2px solid var(--accent); }
+.tab-button { ... }
+.tab-button.active { ... }
+.tab-content { display: none; animation: fadeIn 0.4s ease-in-out; }
+.tab-content.active { display: block; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
